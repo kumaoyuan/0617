@@ -104,6 +104,7 @@ ul.drop-down-menu li:hover > ul { /* 滑鼠滑入展開次選單*/
     transition: opacity 0.3s;
     left: -1px;
     border-right: 5px;
+    z-index:25;
 }
 
 
@@ -197,7 +198,7 @@ footer > h5{
 }
 a.meau_choice , a.drop_choice {
     display: inline-block;
-
+    
     color:white;
     text-decoration: none;    
     text-align: center;
