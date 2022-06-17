@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>balama</title>
+
+    <link href="../assets/css/product.css" rel="stylesheet">
+
+    
+</head>
+
+<body>
+    <div class="boxback">
+        <form action=""  class="box">
+            
+            <div class="box_left">
+                <div class="product_pic">
+                    <img src="../assets/img/balama.png">
+                </div>
+            </div>
+            <div class="box_right">
+                <div class="product_title">
+                    巴拿馬藝伎 日曬
+                </div>
+                <div class="product_text">
+                    風味：水蜜桃・熱帶水果・巧克力<br>
+                    調性：水果調性<br>
+                    價格：$1,360
+                    庫存：10
+                </div>
+
+                <br>
+
+                <div class="product_btn_text">
+                    請選擇購買數量後加入購物車
+                </div>
+
+                <div class="product_btn">
+                    <input type="button" class="num-button" value="-" onclick="minusNUM()">
+                    <input type="text" class="number" id="num" value="1">
+                    <input type="button" class="num-button" value="+" onclick="addNUM()">
+                </div>
+                
+                
+                <br>
+
+                <div class="product_cart_btn">
+                    <button class="btn"> <a href="cart.html">加入購物車</a></button>
+                    <button class='btn'><a href="introduce.html">回去購物</a></button>
+                </div>
+                <div class="comment">
+                    <div class="commenttitle">
+                        <h5>歷史評價</h5>
+                    </div>
+                    <div class="commentp">
+                    新北劉小姐:這個真的超好喝!!!!!
+                    </div>
+                </div>
+
+            </div>
+            
+        </form>
+        <form action="" method="post" class="basic-grey">
+            <h1>商品留言</h1>
+            <label>
+                <div class="grey_text">Your Name:</div>
+                <input id="name" type="text" name="name" placeholder="Your Full Name"/>
+            </label>
+            <label>
+                <div class="grey_text">Your Email:</div>
+                <input id="email" type="email" name="email" placeholder="Your Email Address"/>
+            </label>
+            <label>
+                <div class="grey_text">Message:</div>
+                <textarea id="message" name="message" placeholder="You Message To Us"/>
+            </textarea>
+            </label>
+            <label>
+                <span>&nbsp;</span>
+                <input type="button" class="button" value="Send"/>
+            </label>
+            
+            <div class="STAR">
+                        <input type="radio" name="star" id="star1">
+                        <label for="star1"></label>
+                            <input type="radio" name="star" id="star2">
+                            <label for="star2"></label>
+                            <input type="radio" name="star" id="star3">
+                            <label for="star3"></label>
+                            <input type="radio" name="star" id="star4">
+                            <label for="star4"></label>
+                            <input type="radio" name="star" id="star5">
+                            <label for="star5"></label>
+                        </div>                       
+           
+                
+            </div>
+        </form>
+    </div>
+    
+    <script>
+        function minusNUM(){
+          let value=Number(document.getElementById('num').value);
+          if(value!=1){
+            document.getElementById('num').value=value-1;
+          }
+        }
+        function addNUM(){
+          let value=Number(document.getElementById('num').value);
+            document.getElementById('num').value=value+1;
+  
+        }
+    </script>
+
+    
+    
+</body>
+</html>

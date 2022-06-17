@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>精品咖啡豆</title>
+
+    <link href="../assets/css/checkout.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      
+        <nav>
+          <ul class="drop-down-menu">
+            <li><a href="index.html" class="meau_choice">好咖在 good coffee</a>
+            </li>
+            </li>
+            <li><a href="team2.html" class="meau_choice">團隊介紹</a>
+            </li>
+            <li><a href="introduce.html" class="meau_choice">商品介紹</a>
+            </li>
+            <li><a href="#" class="meau_choice">商品選購</a>
+            
+            <ul>
+            <li><a href="boutique.html" class="meau_choice">精品咖啡豆</a>
+            </li>
+            <li><a href="" class="drop_choice">私房咖啡豆</a>
+              <ul>
+                <li><a href="fruit.html" >水果調性</a></li>
+                <li><a href="wood.html" >木質調性</a></li>
+                <li><a href="flower.html" >花香調性</a></li>
+              </ul>
+            </li></ul></li>
+            <li><a href="question2.html" class="meau_choice">聯絡我們</a>
+            </li>
+            <li>
+              <div class="box">
+                <div class="container-1">
+                  <span class="icon"><img src="../assets/img/search.png"></span>
+                  <input type="search" id="search" placeholder="Search..." />
+                </div>
+              </div>
+            </li>
+            <li><a href="login.html" class="meau_choice">登入 | 註冊</a></li> 
+            <li><a href="member.html"><img src="../assets/img/member.png" id="member"></a></li>
+            <li><a href="cart.html"><img src="../assets/img/cart.png" id="cart" ></a></li>
+          </ul>
+        </nav>
+    
+    </header>
+    <main> 
+        <div class="checkout">
+            <div class="checkouttitle">
+              <h2>訂單資料</h2>
+            </div>
+            
+            <div class="form">
+            <form>
+              <table class="form">
+
+                <tr>
+                <td class='t1' rowspan='2'>選購明細</td>
+                </tr>
+                <tr>
+                <td class='t2'>
+
+                <tr>
+                  <td class="t1">收件者姓名</td>
+                  <td class="t2"><input type="text" class="tt2" name="name"></td>
+              
+                </tr>
+              
+                <tr>
+                  <td class="t1">收件者電話(10碼)</td>
+                  <td class="t2"><input type="text" class="tt2" name="cellphone" maxlength="10"></td>
+                  
+                </tr>
+                <tr>
+                  <td class="t1">付款方式</td>
+                  <td colspan="3" td class="t2">
+                    &nbsp &nbsp<input type="radio" name="payway" value="cash">貨到付款 &nbsp &nbsp
+                    <input type="radio" name="payway" value="creditcard">線上匯款
+                  </td>
+                </tr>
+                <tr>
+                    <td class="t1"> 聯絡信箱</td>                
+                    <td colspan="3" class="t2"> <input type="email"  class="tt2" size="50" name="email"></td>
+                </tr>
+              <tr>
+                  <td class="t1">送件地址</td>
+                  <td colspan="3" class="t2">
+                      <select name="CountyName" class="tt2">
+                          <option value="宜蘭縣" >宜蘭縣</option>
+                          <option value="基隆市" >基隆市</option>
+                          <option value="臺北市" >臺北市</option>
+                          <option value="新北市" >新北市</option>
+                          <option value="桃園縣"selected >桃園市</option>
+                          <option value="新竹縣" >新竹市</option>
+                          <option value="苗栗縣" >苗栗縣</option>
+                          <option value="臺中市" >臺中市</option>
+                          <option value="彰化縣" >彰化縣</option>
+                          <option value="南投縣" >南投縣</option>
+                          <option value="雲林縣" >雲林縣</option>
+                          <option value="嘉義縣" >嘉義縣</option>
+                          <option value="嘉義市" >嘉義市</option>
+                          <option value="臺南市" >臺南市</option>
+                          <option value="高雄市" >高雄市</option>
+                          <option value="屏東縣" >屏東縣</option>
+                          <option value="臺東縣" >臺東縣</option>
+                          <option value="花蓮縣" >花蓮縣</option>
+                          <option value="澎湖縣" >澎湖縣</option>
+                          <option value="金門縣" >金門縣</option>
+                          <option value="連江縣" >連江縣</option>
+                      </select>
+                      <input type="text"  class="tt2" size="50" name="address">
+                  </td>
+              </tr>
+              <tr>
+                  <td valign="top" class="t1">備註</td>
+                  <td colspan="3" class="t2">
+                      <textarea rows="4" cols="50" name="note"></textarea>
+                  </td>
+              </tr>
+              <tr>
+                  <td colspan="4" style="text-align: center;">
+                    <div class="checkout_btn">
+                        <input type="submit" class="btn" value="結帳" /> &nbsp &nbsp
+                        <input type="reset" class="btn" value="重設" />
+                    </div>
+                      
+                  </td>                
+              </tr>
+              </table>
+            </form>
+            </div>
+         </div>
+    </main>
+
+    
+
+    <footer>
+      <h5>Copyrgiht @ 2022 Design By CYIM <br>您是我們的150位訪客</h5>
+    </footer>
+  </body>
+</html>

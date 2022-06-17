@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   
+    <title>購物車</title>
+
+    <link href="../assets/css/cart.css" rel="stylesheet">
+
+  </head>
+
+  <body>
+
+    <header>
+      
+        <nav>
+          <ul class="drop-down-menu">
+            <li><a href="index.html" class="meau_choice">好咖在 good coffee</a>
+            </li>
+            </li>
+            <li><a href="team2.html" class="meau_choice">團隊介紹</a>
+            </li>
+            <li><a href="introduce.html" class="meau_choice">商品介紹</a>
+            </li>
+            <li><a href="#" class="meau_choice">商品選購</a>
+            
+            <ul>
+            <li><a href="boutique.html" class="meau_choice">精品咖啡豆</a>
+            </li>
+            <li><a href="" class="drop_choice">私房咖啡豆</a>
+              <ul>
+                <li><a href="fruit.html" >水果調性</a></li>
+                <li><a href="wood.html" >木質調性</a></li>
+                <li><a href="flower.html" >花香調性</a></li>
+              </ul>
+            </li></ul></li>
+            <li><a href="question2.html" class="meau_choice">聯絡我們</a>
+            </li>
+            <li>
+              <div class="box">
+                <div class="container-1">
+                  <span class="icon"><img src="../assets/img/search.png"></span>
+                  <input type="search" id="search" placeholder="Search..." />
+                </div>
+              </div>
+            </li>
+            <li><a href="login.html" class="meau_choice">登入 | 註冊</a></li> 
+            <li><a href="member.html"><img src="../assets/img/member.png" id="member"></a></li>
+            <li><a href="cart.html"><img src="../assets/img/cart.png" id="cart" ></a></li>
+          </ul>
+        </nav>
+    
+    </header>
+    <main> 
+        <section>
+            <div class="cart">
+              <div class="carttitle">
+                <h1>購物車</h1>
+              </div>
+              
+              <div class="cartproduct">
+                <div class="cartproduct_left">
+                    <div class="cartproductImg">
+                      <img src="../assets/img/balama.png">
+                    </div>
+                </div>
+                <div class="cartproduct_right">
+                    <div class="cartproductDetail">
+                        <h1>巴拿馬藝伎 日曬</h1>
+                        <p>世界冠軍品種，被稱作精品咖啡指標的巴拿馬藝伎，產量稀少珍貴，採用日曬處理、淺中焙度，口感乾淨明亮，聞得到花香、喝得到熱帶水果的甜韻。
+        
+                        風味：水蜜桃・熱帶水果・巧克力／焙度：淺中
+                        調性：水果調性
+                        </p>
+                        <br>
+                        <br>
+                        <p>庫存:100</p>
+                        <br>
+                        <input type="button" class="num-button" value="-" onclick="minusNUM()">
+                        <input type="text" class="number" id="num" value="1">
+                        <input type="button" class="num-button" value="+" onclick="addNUM()">
+                    </div>
+
+                    <br><br><br><br>
+
+                    <div class="checkout_btn">
+                      <button class="btn">刪除</button>
+                    </div>
+                    
+                  </div>
+                </div>
+               
+                
+            </div>
+              
+            <div class="checkout">
+                <div class="checkout-btn">
+                    <button class="button"> <a href="checkout.html">結帳去</a></button>
+                </div>
+                <div class="goshop-btn">
+                  <button class="button"> <a href="introduce.html">繼續選購</a> </button>
+                </div>
+              
+            </div>
+        </section>
+        <script>
+            function minusNUM(num){
+              let input=Number(document.getElementsByClassName('number')[num].value);
+              if(input!=1){
+                document.getElementsByClassName('number')[num].value=input-1;
+              }
+            }
+            function addNUM(num){
+              let input=Number(document.getElementsByClassName('number')[num].value);
+                document.getElementsByClassName('number')[num].value=input+1;
+            }       
+        </script>
+    </main>
+
+    
+
+    <footer>
+      <h5>Copyrgiht @ 2022 Design By CYIM <br>您是我們的150位訪客</h5>
+    </footer>
+  </body>
+</html>
