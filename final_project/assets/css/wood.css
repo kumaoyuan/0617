@@ -322,30 +322,23 @@ a.meau_choice , a.drop_choice {
 
 
 ul.coffee_choose_menu {
-    
+    margin-top: 10%;
     display: inline-block;
     
     font-size: 18px;
+    width: 100%;
 }
 
-ul.coffee_choose_menu li {
-    position: relative;
-    white-space: nowrap;
-    
-}
-
-ul.coffee_choose_menu > li:last-child {
-    border-right: none;
-}
 
 
  ul.coffee_choose_menu a {
     
     color: #333;
     display: block;
-    padding: 0 30px;
+    
     text-decoration: none;
     line-height: 40px;
+    width: 90%;
 
 }
 ul.coffee_choose_menu a:hover { /* 滑鼠滑入按鈕變色*/
@@ -355,4 +348,9 @@ ul.coffee_choose_menu a:hover { /* 滑鼠滑入按鈕變色*/
 ul.coffee_choose_menu li:hover > a { /* 滑鼠移入次選單上層按鈕保持變色*/
     background-color: #ef5c28;
     color: #fff;
+}
+
+.meau_text{
+    font-size: 18px;
+    width: 90%;
 }
